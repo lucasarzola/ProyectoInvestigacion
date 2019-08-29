@@ -1,0 +1,79 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Admin";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title>Administrador</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <h2 style="text-align:center " border: 1px solid black;>Administrador</h2>
+    <br />
+
+    <div style="margin: auto;max-width:500px">
+        <table height="500" width ="500"class="table-dark" style="text-align:center;" border="1">
+            <thead>
+                <tr>
+                    
+                    <th scope="row">Sector H1</th>
+                    <th>Sector H2</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><button id="boton1" nro-plaza="1" type="button" class="btn btn-default">H1</button></th>
+                    <th><button id="boton2" nro-plaza="2" type="button" class="btn btn-default">H2</button></th>
+
+                </tr>
+                <tr>
+                    <th><button id="boton3" nro-plaza="3" type="button" class="btn btn-default">H3</button></th>
+                    <th><button id="boton4" nro-plaza="4" type="button" class="btn btn-default">H4</button></th>
+
+                </tr>
+
+        </table>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+    //setTimeout(getAll(), 500);
+    $(document).ready(function () {
+        function getAll() {
+            $.ajax({
+                url: document.location.origin + "/api/plaza/GetAll",
+                type: 'GET',
+                contentType: "application/json",
+                success: function (data) {
+                    $.each(data, function (index, value) {
+                        console.log(value.estado);
+                        if (value.estado) {
+                            $("#boton" + value.id).removeClass('btn-default').removeClass('btn-danger').addClass('btn-success');
+                        }
+                        else {
+                            $("#boton" + value.id).removeClass('btn-default').removeClass('btn-success').addClass('btn-danger');
+                        }
+                    });
+                },
+                error: function (request, error) {
+                    alert("Request: " + JSON.stringify(request));
+                }
+            });
+        }
+        setInterval(getAll, 500);
+    });
+
+</script>
+

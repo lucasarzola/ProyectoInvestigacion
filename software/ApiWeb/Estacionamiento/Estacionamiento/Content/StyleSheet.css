@@ -1,0 +1,23 @@
+﻿body {
+    background: beige;
+}
+
+p{
+    font-family: 'Comic Sans MS';
+    line-height: 20px;
+    color: black;
+}
+H2{
+    font-family: 'Courier New';
+    background: green;
+    font-size: 24pt;
+    font-weight: bold;
+    color:white;
+}
+H4{
+    font-family: Verdana;
+    font-size: 16pt;
+    font-weight: bold;
+    color: orangered;
+
+}

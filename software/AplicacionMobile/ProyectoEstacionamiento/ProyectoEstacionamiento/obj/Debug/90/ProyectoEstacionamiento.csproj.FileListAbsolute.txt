@@ -1,0 +1,8 @@
+C:\Users\gyl\Desktop\Proyecto de investigacion\software\AplicacionMobile\ProyectoEstacionamiento\ProyectoEstacionamiento\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\gyl\Desktop\Proyecto de investigacion\software\AplicacionMobile\ProyectoEstacionamiento\ProyectoEstacionamiento\obj\Debug\90\build.props
+C:\Users\gyl\Desktop\Proyecto de investigacion\software\AplicacionMobile\ProyectoEstacionamiento\ProyectoEstacionamiento\obj\Debug\90\adb.props
+C:\Users\gyl\Desktop\Proyecto de investigacion\software\AplicacionMobile\ProyectoEstacionamiento\ProyectoEstacionamiento\obj\Debug\90\ProyectoEstacionamiento.csprojAssemblyReference.cache
+C:\Users\gyl\Desktop\Proyecto de investigacion\software\AplicacionMobile\ProyectoEstacionamiento\ProyectoEstacionamiento\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\gyl\Desktop\Proyecto de investigacion\software\AplicacionMobile\ProyectoEstacionamiento\ProyectoEstacionamiento\obj\Debug\90\resourcepaths.cache
+C:\Users\gyl\Desktop\Proyecto de investigacion\software\AplicacionMobile\ProyectoEstacionamiento\ProyectoEstacionamiento\obj\Debug\90\res.flag
+C:\Users\gyl\Desktop\Proyecto de investigacion\software\AplicacionMobile\ProyectoEstacionamiento\ProyectoEstacionamiento\obj\Debug\90\flata\compiled.flata
